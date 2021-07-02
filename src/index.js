@@ -4,11 +4,6 @@ import SeasonDisplay from './SeasonDisplay';
 import { Spinner } from './Spinner';
 
 class App extends React.Component {
-  // constructor(props) {
-  //   super(props);
-
-  //   this.state = { lat: null, errorMessage: "" };
-  // }
 
   state = { lat: null, errorMessage: "" };
   componentDidMount() {
@@ -21,7 +16,6 @@ class App extends React.Component {
       }
     );
   }
-
 
   render() {
     if (this.state.errorMessage && !this.state.lat) {
